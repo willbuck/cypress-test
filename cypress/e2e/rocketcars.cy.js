@@ -14,8 +14,12 @@ describe('rocketmiles cars test', () => {
         .type('{downarrow}')
         .type('{downarrow}')
         .type('{enter}');
-      
+      // TODO Fill out the rest of the form, click search, and validate we navigate to the search results page with the input provided
+      cy.location('pathname').should('eq', '/search-results/')
+      // Talk through how else would you improve the test above? How could you make it more reliable? Where would you have this test sit in your CI/CD process for SDLC?
     })
+
+    // (If Time Permits) TODO Sketch out other tests! Pseudocode is okay, we mostly want to understand how you think about designing other scenarios to test.
 
     Cypress.on('uncaught:exception', (err, runnable) => {
         // returning false here prevents Cypress from
