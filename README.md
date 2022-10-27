@@ -15,10 +15,18 @@ For help managing multiple node versions on your machine, we recommend using [nv
 
 You also may want to play around the site and come to the interview with some "user experience" of what it's like to rent a car on our site.
 
-## Instructions:
+## To run the program:
 
-1. Clone this repo to your machine
+1. Fork this repo to your machine
 2. run `yarn` or `npm install` to install dependencies
 3. run `npx cypress open` to open the cypress IDE
 4. Navigate to the `cypress/e2e/rocketcars.js` test
 5. Follow the instructions in that file to finish the test
+
+## Overview of Instructions:
+
+We maintain a whitelabeled React application that allows users to rent cars across the globe. Today, we’d like to see you apply your testing philosophy onto our landing page by creating a "happy path" where the form inputs are filled in and the button is clicked to go to the next page. 
+
+There are no gotchyas, no booby traps, and we have nothing to hide. Please, take a few minutes to interact with the page and consider how’d write tests against it. 
+
+The app itself is behaving mostly exactly as we intend it to behave, so you hopefully shouldn’t find aberrant behaviors. Instead, we’d like to see you write tests that a team might use to ensure that changes to the components do not break our core functionality. We’re here to help and answer your questions. This is not a test to see how much you’ve memorized.
